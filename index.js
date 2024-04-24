@@ -1,5 +1,4 @@
 window.addEventListener("DOMContentLoaded", async () => {    
-    const imgDiv = document.getElementById('evo-img');
     const local = await JSON.parse(window.localStorage.getItem('estados'));
     let estadosList = [];
 
