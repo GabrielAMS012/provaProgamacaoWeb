@@ -4,9 +4,6 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     if (local == null) { window.localStorage.setItem('estados', JSON.stringify([])) }
 
-    let urls = [];
-    let counter = 0;
-
     fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados`)
         .then(async (res) => {
             const response = await res.json();        
